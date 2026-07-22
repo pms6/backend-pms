@@ -1,6 +1,6 @@
 // controllers/propertyController.js
 import Property from "../models/Property.js";
-import Room from "../models/Room.js";
+import Room from "../models/room.js";
 
 /**
  * Generate Property Code

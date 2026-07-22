@@ -1,6 +1,6 @@
 import Viewing from "../models/Viewing.js";
 import Lead from "../models/Lead.js";
-import Room from "../models/Room.js";
+import Room from "../models/room.js";
 
 // @desc    Get the signed-in TENANT's own viewings (matched by their leads).
 // @route   GET /api/viewings/my

@@ -1,5 +1,5 @@
 // controllers/roomController.js
-import Room from "../models/Room.js";
+import Room from "../models/room.js";
 import Property from "../models/Property.js";
 
 /**
