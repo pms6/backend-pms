@@ -1,6 +1,6 @@
 // controllers/member.controller.js
 import mongoose from "mongoose";
-import OrganizationMember from "../models/OrganizationMember.js";
+import OrganizationMember from "../models/organizationMember.js";
 import User from "../models/User.js";
 import Organization from "../models/Organization.js";
 import bcrypt from "bcrypt";
