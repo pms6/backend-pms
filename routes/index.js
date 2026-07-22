@@ -1,10 +1,10 @@
 import express from "express";
 
-import authRoutes from "./auth.route.js";
-import propertyRoutes from "./property.route.js";
-import roomRoutes from "./room.route.js";
-import leadRoutes from "./lead.route.js";
-import memberRoutes from "./member.route.js";
+import authRoutes from "./auth.Route.js";
+import propertyRoutes from "./property.Route.js";
+import roomRoutes from "./room.Route.js";
+import leadRoutes from "./lead.Route.js";
+import memberRoutes from "./member.Route.js";
 import ownerRoutes from "./owner.route.js";
 import viewingRoutes from "./viewing.Route.js";
 import onboardingRoutes from "./onboarding.route.js";
