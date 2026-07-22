@@ -19,7 +19,7 @@ const sendTokenResponse = async (user, statusCode, res) => {
       expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
       httpOnly: true,
       secure: env.isProd, // Evaluates to true in production
-      sameSite: "strict",
+      sameSite: "none",
     };
 
     // Get organization data if user is Organization
