@@ -16,10 +16,10 @@ const sendTokenResponse = async (user, statusCode, res) => {
     );
 
     const cookieOptions = {
-      expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
       httpOnly: true,
-      secure: env.isProd, // Evaluates to true in production
-      sameSite: "none",
+      secure: env.isProd,
+      sameSite: env.isProd ? "none" : "lax",
+      expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     };
 
     // Get organization data if user is Organization
