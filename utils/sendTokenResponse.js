@@ -1,7 +1,7 @@
 // utils/sendTokenResponse.js
 import jwt from "jsonwebtoken";
 import env from "../config/env.js";
-import OrganizationMember from "../models/OrganizationMember.js";
+import OrganizationMember from "../models/organizationMember.js";
 import Organization from "../models/Organization.js";
 
 const sendTokenResponse = async (user, statusCode, res) => {
