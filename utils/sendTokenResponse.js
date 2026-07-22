@@ -17,8 +17,8 @@ const sendTokenResponse = async (user, statusCode, res) => {
 
     const cookieOptions = {
       httpOnly: true,
-      secure: env.isProd,
-      sameSite: env.isProd ? "none" : "lax",
+      secure: true,
+      sameSite: "none",
       expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     };
 
