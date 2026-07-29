@@ -45,3 +45,4 @@ export const sendEmail = async ({ email, subject, html }) => {
     throw error;
   }
 };
+
