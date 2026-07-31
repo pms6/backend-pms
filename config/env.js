@@ -21,6 +21,8 @@ const env = {
   apiPrefix: process.env.API_PREFIX || "/api/v1",
 
   corsOrigin: process.env.CORS_ORIGIN || "*",
+  
+  clientUrl: process.env.CLIENT_URL || "http://localhost:3000",
 
   mongoUri: required(
     "MONGO_URI",
