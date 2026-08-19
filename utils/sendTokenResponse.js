@@ -1,7 +1,7 @@
 // utils/sendTokenResponse.js
 import jwt from "jsonwebtoken";
 import env from "../config/env.js";
-import OrganizationMember from "../models/organizationMember.js";
+import OrganizationMember from "../models/OrganizationMember.js";
 import Organization from "../models/Organization.js";
 
 const sendTokenResponse = async (user, statusCode, res) => {
@@ -16,10 +16,11 @@ const sendTokenResponse = async (user, statusCode, res) => {
     );
 
     const cookieOptions = {
-      httpOnly: true,
-      secure: true,
-      sameSite: "none",
       expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+      httpOnly: true,
+      secure: env.isProd,                    // false on localhost (HTTP)
+      sameSite: env.isProd ? "None" : "Lax", // "None" only works with Secure + HTTPS
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     };
 
     // Get organization data if user is Organization
