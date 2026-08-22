@@ -2,7 +2,7 @@
 import User from "../models/User.js";
 import Tenant from "../models/Tenant.js";
 import Organization from "../models/Organization.js";
-import OrganizationMember from "../models/organizationMember.js"; // ✅ CORRECT import (uppercase)
+import OrganizationMember from "../models/OrganizationMember.js"; // ✅ CORRECT import (uppercase)
 import bcrypt from "bcrypt";
 import env from "../config/env.js";
 import sendTokenResponse from "../utils/sendTokenResponse.js";

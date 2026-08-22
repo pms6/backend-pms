@@ -2,7 +2,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import Organization from "../models/Organization.js";
-import OrganizationMember from "../models/organizationMember.js";
+import OrganizationMember from "../models/OrganizationMember.js";
 import Tenant from "../models/Tenant.js";
 import env from "../config/env.js";
 

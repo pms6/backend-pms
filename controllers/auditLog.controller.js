@@ -1,5 +1,5 @@
 import AuditLog from "../models/AuditLog.js";
-import OrganizationMember from "../models/organizationMember.js";
+import OrganizationMember from "../models/OrganizationMember.js";
 
 // Utility to create audit log
 export const createAuditLog = async ({
